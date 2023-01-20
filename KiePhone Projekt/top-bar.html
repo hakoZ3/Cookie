@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookie</title>
+
+        <link rel="stylesheet" href="top-bar-style/top-bar-style.css">
+
+        
+
+        <style>
+
+            
+            .top-bar {
+                display: flex;
+            background-color: rgb(46, 45, 45);
+            height: 40px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            
+            
+            
+        }
+
+        .kie-phone{
+            color: rgb(167, 167, 167);
+            font-family: Arial;
+            font-size : 12px;
+            text-decoration: none;
+            transition: color 0.15s;
+            margin-left: 18px;
+           
+            
+        }
+
+        .kie-phone:hover {
+            color:rgb(216, 216, 216)
+        }
+
+        .kie-phone:active {
+            color: white;
+        }
+
+        .cookie-pic {
+            height: 18px;
+            display: flex;
+            align-items: center;
+           
+            transition: opacity 0.15s;
+            opacity:0.7;
+        }
+       
+        .cookie-pic:hover {
+            opacity: 1;
+            
+        }
+
+
+        .header-text{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 45px;
+            color: rgb(44, 44, 44);
+        }
+
+        .header-text2{
+
+            margin-top: -35px;
+            font-family: Arial;
+            
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            display: flex;
+           
+            
+            font-size: 22px;
+            color: rgb(44, 44, 44);
+        }
+
+
+        .header-text3{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .text3{
+            text-decoration: none;
+            margin: 30px;
+            font-family: Arial;
+            margin-top: 20px;
+            color: rgb(0, 102, 204);
+            font-size: 20px;
+            
+        }
+
+        .text3:hover{
+            text-decoration: underline;
+        }
+
+        .phone-picture{
+            width: 400px;
+            margin-top: -30px;
+            
+            
+        }
+
+        .phone-pic1{
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            display: flex;
+        }
+
+       
+        .containerBox {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    width: 100%;
+    
+    
+}
+
+.containerBox2{
+    display:grid;
+    grid-template-columns: 1fr;
+    height: 400px;
+    
+}
+
+
+.img-responsive{
+    height: 800px;
+    width: 100%;
+    
+    
+}
+
+.text-box {
+    position: absolute;    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+    margin-top: 200px;
+    
+    
+
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+   
+}
+h4 {
+   display: inline-block;
+   font-size: 30px; 
+   color: white;  
+   font-family: Arial; 
+   background-color: rgba(205, 251, 255, 0.411);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 10px;
+   padding-left: 10px;
+   border-radius: 16px;
+   
+}
+
+h5{
+    display: inline-block;
+   font-size: 30px; 
+   color: white;  
+   font-family: Arial; 
+   background-color: rgba(129, 23, 23, 0.411);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 10px;
+   padding-left: 10px;
+   border-radius: 16px;
+   
+   
+}
+
+
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+.text1{
+    display: block;
+    margin-top: -150px;
+    text-decoration: none;
+    color: rgba(205, 251, 255, 0.411);
+    font-family: Arial; 
+    font-size: 20px;
+  
+
+}
+
+.text1:hover {
+    text-decoration:underline;
+
+    }
+
+
+    .grids{
+        
+        display: grid;
+        margin-top: 25px;
+        grid-template-columns: 1fr 1fr;
+        height: 800px;
+        row-gap: 10px;
+        column-gap: 10px;
+
+        
+    
+       
+    }
+
+    .grid1{
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        height: 800px;
+        row-gap: 10px;
+        position: relative;
+    display: inline-block;
+    }
+
+    
+   
+
+    
+    .grid4{
+        background-color: rgb(221, 253, 222);
+        border-radius: 10px;
+        height: 800px;
+        row-gap: 10px;
+    }
+
+
+
+
+    .inear{
+        height:100%;
+        width:100%;
+    
+    }
+   
+
+    .grid-text{
+        position: absolute;    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+    margin-top: -500px;
+    
+
+    }
+
+    .grid-text:before{
+        content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+   
+    }
+
+
+    .grid2-container{
+        position: relative;
+    display: inline-block;
+    width: 100%;
+    height:100%;
+
+    }
+
+    .grid-text2 {
+    position: absolute;    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+    
+    
+    
+
+}
+.grid-text2:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: bottom;
+   margin-bottom: -20px;;
+   
+   
+}
+
+    .buy-button{
+        width:80px;
+        height:45px;
+        background-color: rgb(73, 27, 1);
+        color: white;
+        border:none;
+        font-family: Arial;
+        opacity: 0.6;
+        border-radius: 24px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+        
+
+    }
+
+    .buy-button:hover{
+        opacity: 0.9;
+    }
+
+    .buy-button:active{
+        opacity: 0.5;
+    }
+ 
+
+    .bottom-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 400px;
+        background-color: rgb(240, 240, 240);
+        margin-top: 850px;
+        row-gap: 10px;
+        column-gap: 10px;
+        border-radius:10px;
+        padding-top: 60px;
+        
+    }
+
+
+   
+
+   
+
+
+    .bottom-text{
+        font-family: Arial;
+        font-size: 14px;
+        cursor:pointer;
+        display: inline-block;
+        
+    }
+    .bottom-text:hover{
+        text-decoration: underline;
+
+    }
+
+    .bottom-text1{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+
+    /* body{
+        margin-right: 0px;
+            margin-left: 0px;
+    }
+     */
+        </style>
+    </head>
+
+    <body>
+
+        <div class="top-bar">
+            <div> <a target="_blank" href="https://www.google.com/"> <img class="cookie-pic" src="cookie.png"> </a> </div>
+            <div> <a class="kie-phone" href="">Store</a></div>
+            <div> <a class="kie-phone" href="https://www.google.com/search?q=nokia+3210&tbm=isch&ved=2ahUKEwi6yPyiu7X8AhUhnCcCHfU5DgYQ2-cCegQIABAA&oq=nokia+3210&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAELEDEEM6BAgAEEM6BggAEAcQHlDzBVjUBmDLImgAcAB4AIABOYgBpQGSAQEzmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=-2W5Y_reF6G4nsEP9fO4MA&bih=937&biw=1920&rlz=1C1CHBF_deDE760DE760">KiePhone</a></div>
+            <div> <a class="kie-phone" href="">KiePad</a></div>
+            <div> <a class="kie-phone" href="">KiePods</a></div>
+            
+        </div>
+
+        <div class="header-text">
+            <p class="header-text">KiePhone</p>
+        </div>
+
+        <div class="header-text2"> 
+            Small and smaller.</div>
+
+        <div class="header-text3"> 
+            <a class="text3" href="https://www.wikipedia.org/">
+                Learn more
+            </a>
+
+            <a class="text3" href="https://www.google.com/search?q=nokia+3210&tbm=isch&ved=2ahUKEwi6yPyiu7X8AhUhnCcCHfU5DgYQ2-cCegQIABAA&oq=nokia+3210&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAELEDEEM6BAgAEEM6BggAEAcQHlDzBVjUBmDLImgAcAB4AIABOYgBpQGSAQEzmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=-2W5Y_reF6G4nsEP9fO4MA&bih=937&biw=1920&rlz=1C1CHBF_deDE760DE760">
+                Buy
+            </a>
+        </div>
+
+        <div class="phone-pic1">
+            <img class="phone-picture" src="Phone.web">
+        </div>
+        
+        
+        <div class="containerBox">
+            <div class="containerBox2">
+            <div class="text-box">
+                <h4> text text text</h4> 
+                <div><a  href="" class="text1">text</a> </div>
+                
+                
+            </div>
+            
+          
+            <img class="img-responsive" src="free-bitten-cookies-vectors.webp"/>
+        </div>
+            
+        </div>
+
+
+        <div class="grids">
+
+            <div  class="grid1"> 
+
+                <div class="grid2-container">
+
+                    <div class="grid-text2"> 
+                        <button class="buy-button" >Buy</button>
+                    </div>
+
+                <img src="inear.jpg">
+
+               
+                </div>
+            </div>
+
+            <div class="grid1">
+                <div class="grid2-container">
+                    <div class="grid-text2"> 
+                        <button class="buy-button" >Buy</button></div>
+                <img src="phone-pic0.jpg" class="inear">
+            </div>
+            </div>
+
+
+            <div class="grid1">
+
+                <div class="grid2-container">
+
+                    <div class="grid-text2"> 
+                        <button class="buy-button">Buy</button></div>
+                <img src="tablet.webp">
+           
+            </div>    
+
+            </div>
+
+
+            <div class="grid4"></div>
+
+        </div>
+
+
+
+        <div class="bottom-page">
+
+            
+          
+            <div class="bottom-grid"></div>
+            <div class="bottom-grid"><p class="bottom-text1">Shop and Learn </p>
+                <div><p class="bottom-text">Store</p></div>
+                <div><p class="bottom-text">Kac</p></div>
+                <div><p class="bottom-text">KiePad</p></div>
+                <div><p class="bottom-text">KiePhone</p></div>
+                <div><p class="bottom-text">Watch</p></div>
+                <div><p class="bottom-text">KiePods</p></div>
+                <div><p class="bottom-text">Gift Cards</p></div>
+            </div>
+
+            <div class="bottom-grid">
+                <div><p class="bottom-text1">Services</p></div>
+                <div><p class="bottom-text">Cookie Music</p></div>
+                <div><p class="bottom-text">Cookie TV+</p></div>
+                <div><p class="bottom-text">Kie Store</p></div>
+                <div><p class="bottom-text">KieCloud</p></div>
+
+            </div>
+
+
+            <div class="bottom-grid">
+                <div><p class="bottom-text1">Cookie Store</p></div>
+                <div><p class="bottom-text">Find a Store</p></div>
+                <div><p class="bottom-text">Genius Bar</p></div>
+                <div><p class="bottom-text">Today at Cookie</p></div>
+                <div><p class="bottom-text">Order Status</p></div>
+                <div><p class="bottom-text">Shopping Help</p></div>
+
+            </div>
+
+
+            <div class="bottom-grid">
+                <div><p class="bottom-text1">Cookie Values</p></div>
+                <div><p class="bottom-text">Accessibility</p></div>
+                <div><p class="bottom-text">Education</p></div>
+                <div><p class="bottom-text">Environment</p></div>
+                <div><p class="bottom-text">Inclusion and Diversity</p></div>
+                <div><p class="bottom-text">Privacy</p></div>
+                <div><p class="bottom-text">Racial Equity and Justice</p></div>
+                <div><p class="bottom-text">Supplier Responsibility</p></div>
+                
+            </div>
+
+
+            <div class="bottom-grid">
+                <div><p class="bottom-text1">About Cookie</p></div>
+                <div><p class="bottom-text">Newsroom</p></div>
+                <div><p class="bottom-text">Cookie Leadership</p></div>
+                <div><p class="bottom-text">Career Opportunities</p></div>
+                <div><p class="bottom-text">Investors</p></div>
+                <div><p class="bottom-text">Ethics & Compliance</p></div>
+                <div><p class="bottom-text">Contact Cookie</p></div>
+
+            </div>
+
+
+            <div class="bottom-grid"></div>
+
+       
+           
+        </div>
+
+        
+    </body>
+</html>
